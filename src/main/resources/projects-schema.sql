@@ -1,7 +1,3 @@
-DROP TABLE IF EXISTS project_category;
-DROP TABLE IF EXISTS step;
-DROP TABLE IF EXISTS category;
-DROP TABLE IF EXISTS material;
 DROP TABLE IF EXISTS project;
 
 CREATE TABLE project(
@@ -26,7 +22,7 @@ FOREIGN KEY (project_id) REFERENCES project (project_id) ON DELETE CASCADE
 
 CREATE TABLE category(
 category_id INT AUTO_INCREMENT NOT NULL,
-cateogry_name VARCHAR(128) NOT NULL,
+category_name VARCHAR(128) NOT NULL,
 PRIMARY KEY (category_id)
 );
 
